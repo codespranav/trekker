@@ -10,32 +10,32 @@ import { useState } from "react"
 export function Dashboard() {
   const [selectedAlert, setSelectedAlert] = useState<number | null>(null)
 
-  const recentAlerts = [
-    {
-      id: 1,
-      type: "Pothole",
-      location: "Highway 101, Mile 45",
-      severity: "High",
-      status: "Pending",
-      time: "2 hours ago",
-    },
-    {
-      id: 2,
-      type: "Surface Damage",
-      location: "Main Street, Zone B",
-      severity: "Medium",
-      status: "In Progress",
-      time: "5 hours ago",
-    },
-    {
-      id: 3,
-      type: "Congestion",
-      location: "Interstate 5, Exit 12",
-      severity: "Low",
-      status: "Resolved",
-      time: "1 day ago",
-    },
-  ]
+  // const recentAlerts = [
+  //   {
+  //     id: 1,
+  //     type: "Pothole",
+  //     location: "Highway 101, Mile 45",
+  //     severity: "High",
+  //     status: "Pending",
+  //     time: "2 hours ago",
+  //   },
+  //   {
+  //     id: 2,
+  //     type: "Surface Damage",
+  //     location: "Main Street, Zone B",
+  //     severity: "Medium",
+  //     status: "In Progress",
+  //     time: "5 hours ago",
+  //   },
+  //   {
+  //     id: 3,
+  //     type: "Congestion",
+  //     location: "Interstate 5, Exit 12",
+  //     severity: "Low",
+  //     status: "Resolved",
+  //     time: "1 day ago",
+  //   },
+  // ]
 
   const metrics = [
     {
@@ -107,7 +107,7 @@ export function Dashboard() {
           ))}
         </div>
 
-        <Card className="border border-border bg-card">
+        {/* <Card className="border border-border bg-card">
           <div className="border-b border-border p-6 flex items-center justify-between">
             <h3 className="text-xl font-semibold text-foreground">Recent Alerts</h3>
             <Link href="/monitoring">
@@ -163,7 +163,7 @@ export function Dashboard() {
               </div>
             ))}
           </div>
-        </Card>
+        </Card> */}
       </div>
     </section>
   )
